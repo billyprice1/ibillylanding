@@ -6,6 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <title>Coming Soon ~ IBILLY</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         * {
             padding: 0;
@@ -42,6 +43,10 @@
             background-color: #db4105;
         }
 
+        a.no-bg:hover {
+            background: none;
+        }
+
         main {
             margin-top: 5%;
         }
@@ -53,25 +58,30 @@
         #domain {
           font-weight: bold;
         }
+
+        ul {
+          list-style: none;
+        }
+
+        .fa {
+          font-size: 1.1em;
+          color: #ccc;
+          margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <img src="ibilly.png" alt="IBILLY MEDIA GROUP" draggable="false">
+    <a href="http://ibilly.me" class="no-bg"><img src="ibilly.png" alt="IBILLY MEDIA GROUP" draggable="false"></a>
     <h1><span id="domain">This domain</span> is owned by <a href="http://ibilly.me">IBILLY Media Group</a></h1>
     <h2>It is not currently in use</h2>
 
     <main>
-        <p style="margin-bottom: 10px;">If there's any extra info, put it here.</p>
-
-        <p>Ego got in mea dolorem aegris cerebrum; Duo fragmenta rubere oculos venarum</p>
-        <p>Ego got a parte capitis in medio mei; Chainsaw capitur, Caduca rite stravi lectulum meum</p>
-        <p>Vellem tamen quindecim; Et Steve McQueen William Peter</p>
-        <p>Inveni quod Angelus in somno; Nec sibi promissi aridam et interficiam eam cornu</p>
-        <p>L.A. arca copia cibum</p>
-
-        <p>Surge clausus Da mihi nurofen plus; Clausum doleat; Quia graviter vulneratus sum videor in a bus</p>
-        <p>Surge clausus Tu scis te non capio; Im 'Sententia, sub tempestas</p>
+        <p>Questions or suggestions?</p>
+        <ul>
+          <li><i class="fa fa-envelope fa-fw"></i><a href="mailto:billy@ibilly.me">billy@ibilly.me</a></li>
+          <li><i class="fa fa-phone fa-fw"></i><a href="tel:01179110426">01179110426</a></li>
+        </ul>
     </main>
 
     <script>
@@ -79,8 +89,6 @@
 
         if (window.location.hostname) {
             domainspan.innerHTML = window.location.hostname;
-        } else {
-            domainspan.innerHTML = 'This domain';
         }
     </script>
 </body>
